@@ -18,5 +18,7 @@ public class Tester {
         System.out.println(t3.classify());
         System.out.println(p1);
         System.out.println(t3);
+        t3.setVertex(2,new Point(1,3));
+        System.out.println(t3.classify());
     }
 }
