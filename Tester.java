@@ -17,5 +17,6 @@ public class Tester {
         Triangle t3 = new Triangle(0,0,2,0,1,Math.sqrt(3));
         System.out.println(t3.classify());
         System.out.println(p1);
+        System.out.println(t3);
     }
 }
