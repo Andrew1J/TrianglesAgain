@@ -16,5 +16,6 @@ public class Tester {
         System.out.println(t2.getArea());
         Triangle t3 = new Triangle(0,0,2,0,1,Math.sqrt(3));
         System.out.println(t3.classify());
+        System.out.println(p1);
     }
 }
