@@ -8,5 +8,10 @@ public class Tester {
         System.out.println(p1.distanceTo(p3));
         System.out.println(p2.equals(p1));
         System.out.println(p1.equals(p3));
+
+        Point p4 = new Point(2,0);
+        Triangle t1 = new Triangle(p1,p3,p4);
+        Triangle t2 = new Triangle(-1,1,5,1,3,8);
+        
     }
 }
