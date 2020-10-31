@@ -21,4 +21,17 @@ public class Triangle {
         double s = getPerimeter() / 2;
         return Math.sqrt(s*(s-v1.distanceTo(v2))*(s-v1.distanceTo(v3))*(s-v2.distanceTo(v3)));
     }
+
+    public String classify(){
+        double s1 = Math.round(10000*v1.distanceTo(v2))/10000.0;
+        double s2 = Math.round(10000*v1.distanceTo(v3))/10000.0;
+        double s3 = Math.round(10000*v2.distanceTo(v3))/10000.0;
+        if(s1==s2&&s2==s3){
+            return "equilateral";
+        } else if(s1==s2||s1==s3||s2==s3){
+            return "isosceles";
+        } else {
+            return "scalene";
+        }
+    }
 }
